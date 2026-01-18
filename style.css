@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #ffd6e0, #fff3f5);
+    color: #ff3366;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff1a75;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.2em;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.countdown div {
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn {
+    display: inline-block;
+    margin: 20px 10px;
+    padding: 12px 25px;
+    background: #ff4da6;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff1a75;
+}
+
+.cake-container {
+    margin: 40px auto;
+}
+
+.cake {
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cake-layer {
+    height: 40px;
+    background: #ff99cc;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.candles {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: -50px;
+    width: 100%;
+}
+
+.candle {
+    width: 10px;
+    height: 40px;
+    background: yellow;
+    border-radius: 5px;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.photo-section img {
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.rose {
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+.message {
+    font-size: 1.3em;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #ff3399;
+}
