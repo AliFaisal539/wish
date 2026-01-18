@@ -9,9 +9,13 @@
 <body>
     <div class="container">
         <h1>For You, My Little Pancake ❤️</h1>
+        
         <div class="photo-section">
-            <img src="her.jpg.png" alt="Your Special Photo">
+            <img src="herpic.jpg.png" alt="Your Special Photo" id="birthdayPhoto">
+            <!-- Floating flowers container -->
+            <div class="flowers"></div>
         </div>
+
         <div class="rose">
             🌹
         </div>
@@ -19,5 +23,28 @@
             You are a pure soul, a beautiful rose in this world. May your 21st year be filled with happiness, laughter, and endless blessings. 🎉
         </p>
     </div>
+
+    <script>
+        // Floating flower animation
+        const flowersContainer = document.querySelector(".flowers");
+
+        function createFlower() {
+            const flower = document.createElement("div");
+            flower.classList.add("flower");
+            flower.style.left = Math.random() * 80 + "%";
+            flower.style.animationDuration = (5 + Math.random() * 5) + "s";
+            flower.style.fontSize = (15 + Math.random() * 20) + "px";
+            flower.textContent = "🌸"; // You can change to 🌹 for roses
+            flowersContainer.appendChild(flower);
+
+            // Remove flower after animation ends
+            setTimeout(() => {
+                flower.remove();
+            }, 10000);
+        }
+
+        // Create flowers every 500ms
+        setInterval(createFlower, 500);
+    </script>
 </body>
 </html>
